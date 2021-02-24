@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(35, 218, 74);
+  }
+  .nav li {
+    float: right;
+  }
+  .nav li a {
+    display: block;
+    color:snow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    background-color: lightgrey;
+  }
+
+  .nav {
+      padding-top:0px;
+      display: inline;
+      margin-bottom: 2px;
+      padding-bottom: 10px;
+  }
+  .ieee{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 4rem;
+    width: auto;
+    line-height: 40px;
+  }
+  .ssninfo{
+    margin-top:10px ;
+    padding-top: 0px;
+    width: auto;
+    height: auto;
+
+  }
+  .intro{
+    margin: 6px;
+    padding: 0px 0px 10px 10px;
+  }
+  .ssnpic{
+   height:auto;
+   width: auto;
+  display: inline;
+   margin-right: auto;
+   margin-left:auto;
+  
+    
+  }
+  .ssnpic:hover{
+    box-shadow: 0 0 2px 1px lightskyblue;
+  }
+.ssninfo .info1{
+  
+  font-size:x-large;
+}
+.department ol{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.mech{
+  left:50%;
+  ;
+  border: 3px brown;
+  border-radius: 3px;
+  border-style: dotted;
+  height: 300px;
+  width: 250px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  overflow: hidden;
+}
+.mech img{
+  height: 100%;
+  width: 100%;
+}
+.mechdiv{
+
+
+
+font-size: x-large;
+background-color: ivory;
+position: relative;
+
+text-align: center;
+
+height: 60%;
+
+top: -40%;
+
+}
+.department{
+    text-align: center;
+    font-weight: 700;
+    color: skyblue;
+    text-shadow: 1px 1px 2px blue;
+    width: auto;
+    height:max-content;
+    background-position: center;
+    margin-bottom: 10em;
+}.department h2{
+  font-size:30px;
+  transform: 
+}
+.col-6{
+    width: 50%;
+}
+
+
+@media screen and(min-width:800px){
+  
+}
+  @media screen and (min-width:1200px){
+    .ssnpic{
+      height:auto;
+      width: auto;
+    }  
+    .cordinator img{
+        width: 200px;
+    height: 300px;
+    padding: 3px;
+   
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px black;
+    border-style: double;
+      }
+      .cordinator p{
+        top;10%;
+      }
+    .cordinator{
+    
+    display: flex;
+    }
+  }
+  @media screen and (max-width: 720px)
+  {
+      .cordinator img{
+        width: 100px;
+    height: 150px;
+    padding: 3px;
+   
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px black;
+    border-style: double;
+      }
+  }
+  }
+  </style>
+</head>
+<body style="background-color: #e9ecef;">
+<div class="nav">
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <h1 class="ieee">ieee</h1>
+</ul>
+</div>
+<div class="department">
+    <h2>mech</h2>
+    <div class="row">
+        <div class="col-xl-6 col-sm-12">
+          
+            <div class="cordinator">
+              <img  src="https://www.noticebard.com/wp-content/uploads/2018/01/SSN.png"alt="">
+<p class="cordinatorinfo"> get the most out of Visual Studio Code, start by reviewing a few introductory topics:
+
+Intro Videos - Begin your journey with VS Code through these introductory videos.
+
+Setup - Install VS Code for your platform and configure the tool set for your development needs.
+
+User Interface - Introduction</p></div>
+        </div>
+        <div class="col-xl-6 col-sm-12">
+            <div class="cordinator">
+              
+              <img  src="https://www.noticebard.com/wp-content/uploads/2018/01/SSN.png"alt="">
+           <p class="cordinatorinfo"> hiTo get the most out of Visual Studio Code, start by reviewing a few introductory topics:
+
+            Intro Videos - Begin your journey with VS Code through these introductory videos.
+            
+            Setup - Install VS Code for your platform and configure the tool set for your development needs.
+            
+            User Interface - Introduction</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <% var i; %>
+    <% for(i=0; i< name.length;i++){ %>
+    <% var link='/mech/'+event[i];%>
+      <a href= <%=link%> >
+        <div class="mech">
+          <img src="https://www.noticebard.com/wp-content/uploads/2018/01/SSN.png" alt="">
+          <div class="mechdiv">
+           <%=name[i]%>
+          </div> </div>
+      </a>
+      
+      <!--<div class="mech">
+        
+        <img src="https://www.noticebard.com/wp-content/uploads/2018/01/SSN.png" alt="">
+        <div class="mechdiv">mechanical</div>
+      </div>
+    <div class="mech">
+      
+      <img src="https://www.noticebard.com/wp-content/uploads/2018/01/SSN.png" alt="">
+      <div class="mechdiv">HIh</div>
+    </div>-->
+ <% } %>
+     
+</div>
